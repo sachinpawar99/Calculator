@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<title>Calculators</title>
+<style>
+
+body{
+background-color:grey;
+}
+
+div{
+width:305px; height:400px;background-color:white;border-top:40px groove red;border-bottom:10px groove red;margin:0px;border-radius:40px;
+box-shadow:0px 10px #323232;
+}
+
+input[type="text"]{
+width:295px;height:30px;margin:3px;}
+
+input[type="button"]{
+width:68px;height:45px;margin:2px;
+}
+
+</style>
+<body>
+<center>
+<div>
+<form name="wap">
+<input type="text" name="result">
+<br><br>
+
+<input type="button"value="1" onclick="document.wap.result.value+=1">
+<input type="button"value="2" onclick="document.wap.result.value+=2">
+<input type="button"value="3" onclick="document.wap.result.value+=3">
+<input type="button"value="4" onclick="document.wap.result.value+=4">
+<br><br>
+
+<input type="button"value="5" onclick="document.wap.result.value+=5">
+<input type="button"value="6" onclick="document.wap.result.value+=6">
+<input type="button"value="7" onclick="document.wap.result.value+=7">
+<input type="button"value="8" onclick="document.wap.result.value+=8">
+<br><br>
+
+<input type="button"value="9" onclick="document.wap.result.value+=9">
+<input type="button"value="0" onclick="document.wap.result.value+=0">
+<input type="button"value="." onclick="document.wap.result.value+=.">
+<input type="button"value="c" onclick="document.wap.result.value=' '">
+<br><br>
+
+<input type="button"value="+" onclick="document.wap.result.value+='+'">
+<input type="button"value="-" onclick="document.wap.result.value+='-'">
+<input type="button"value="*" onclick="document.wap.result.value+='*'"> 
+<input type="button"value="/" onclick="document.wap.result.value+='/'">
+<br><br>
+
+<input type="button"value="="style="width:295px;height:50px;" onclick="document.wap.result.value=eval(document.wap.result.value)">
+</form>
+</div>
+</center>
+</body>
+</html>
